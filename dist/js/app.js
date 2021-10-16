@@ -12,6 +12,9 @@ const locationGit = document.querySelector('#location');
 const twitter = document.querySelector('#twitter');
 const blog = document.querySelector('#blog');
 const company = document.querySelector('#company');
+const profileInfo = document.querySelector('.profile');
+profileInfo.style.visibility = 'hidden';
+
 // searchBar.onclick = function shoot() {
 
 //     console.log(Img[0]);
@@ -109,6 +112,8 @@ searchBar.onclick = function() {
         }
 
     }
+
+    setTimeout(function() { profileInfo.style.visibility = 'visible'; }, 500);
     searchUser.value = '';
     setTimeout(function() { searchBar.disabled = false; }, 2000);
 }

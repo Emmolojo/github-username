@@ -227,7 +227,7 @@ body.dark .toggle span {
 }
 
 body.light {
-  background-color: #F5F8FF;
+  background-color: #f1f1f177;
 }
 
 body.light input {
@@ -268,7 +268,7 @@ body.light p {
 }
 
 body.light .profile__info__stats {
-  background-color: #F5F8FF;
+  background-color: #f1f1f177;
 }
 
 body.light .profile__info__address__block span img {
