@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <link rel="shortcut icon" href="dist/assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Github Username</title>
+</head>
+
+<body class="light">
+    <main>
+        <div class="container">
+            <nav class="navbar">
+                <h1>devfinder</h1>
+                <div class="toggle">
+                    <span id="toggleText">DARK</span>
+                    <img src="dist/assets/Icon-material-wb-sunny.svg" alt="Light Mode" class="lightmode ">
+                    <img src="dist/assets/Icon-open-moon.svg" alt="Dark Mode" class="darkmode active">
+                </div>
+            </nav>
+            <div class="interface">
+                <div class="search_bar">
+                    <div class="searchInput">
+                        <input type="text" id="searchUser" placeholder="Search GitHub Username....">
+                        <span><img src="dist/assets/Icon-feather-search.svg" alt="Search box"></span>
+                    </div>
+                    <button id="searchBar">Search</button>
+                    <div id="err"></div>
+                </div>
+
+                <div class="profile">
+                    <!-- Profile image -->
+                    <div class="profile__image">
+                        <img src="dist/assets/avatar.png" alt="emmolojo">
+                        <!-- profile information header -->
+                        <div class="header">
+                            <!-- header main -->
+                            <div class="header__main">
+                                <h1 id="fullName">The Octocat</h1>
+                                <a href="#" id="username">@Username</a>
+                            </div>
+                            <!-- header date -->
+                            <div class="header__date">
+                                Joined 25 Jan 2011
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile information -->
+                    <div class="profile__info">
+
+                        <!-- profile information biography -->
+                        <div class="profile__info__bio">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque odit aperiam iusto praesentium voluptatum temporibus et, quas, nisi iure obcaecati reprehenderit ab. Minima
+                        </div>
+                        <!-- profile information data numbers -->
+                        <div class="profile__info__stats">
+                            <div class="repos center">
+                                <p>Repos</p>
+                                <h1 id="repo">8000</h1>
+                            </div>
+                            <div class="followers center">
+                                <p>Followers</p>
+                                <h1 id="follower">20000</h1>
+                            </div>
+                            <div class="following center">
+                                <p>Following</p>
+                                <h1 id="followers">10000</h1>
+                            </div>
+                        </div>
+                        <!-- profile information address details -->
+                        <div class="profile__info__address">
+                            <div class="profile__info__address__block">
+                                <span><img src="dist/assets/Icon-material-location-on.svg" alt=""></span>
+                                <div id="location">San Francisco. new yoork</div>
+                            </div>
+                            <div class="profile__info__address__block">
+                                <span><img src="dist/assets/Icon-awesome-twitter.svg" alt=""></span>
+                                <div id="twitter">Not Available</div>
+                            </div>
+                            <div class="profile__info__address__block">
+                                <span><img src="dist/assets/Group2.svg" alt=""></span>
+                                <a href="#" id="blog">https://github.blog</a>
+                            </div>
+                            <div class="profile__info__address__block">
+                                <span><img src="dist/assets/Icon-awesome-building.svg" alt=""></span>
+                                <div id="company">Brain box</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <input type="text" class="inputVav">
+    <button class="btn">load</button> -->
+    <script src="dist/js/app.js"></script>
+</body>
+
+</html>

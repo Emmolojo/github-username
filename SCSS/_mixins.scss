@@ -1,0 +1,23 @@
+  @mixin sscreen {
+      @media screen and (min-width: $sscreen) {
+          @content;
+      }
+  }
+  
+  @mixin mscreen {
+      @media screen and (min-width: $mscreen) {
+          @content;
+      }
+  }
+  
+  @mixin lscreen {
+      @media screen and (min-width: $lscreen) {
+          @content;
+      }
+  }
+  
+  @mixin xlscreen {
+      @media screen and (min-width: $xlscreen) {
+          @content;
+      }
+  }
