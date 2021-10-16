@@ -131,6 +131,31 @@ toggleBtn.addEventListener('click', () => {
     }
 
 });
+//  detect darkmode
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // dark mode
+    modeBody.classList.toggle('dark');
+    modeBody.classList.toggle('light');
+    lmode.classList.toggle('active');
+    dmode.classList.toggle('active');
+    if (toggleText.innerHTML == 'LIGHT') {
+        toggleText.innerHTML = `DARK`;
+    } else {
+        toggleText.innerHTML = `LIGHT`;
+    }
+
+}
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    modeBody.classList.remove('dark');
+    lmode.classList.add('active');
+    dmode.classList.remove('active');
+    if (toggleText.innerHTML == 'LIGHT') {
+        toggleText.innerHTML = `DARK`;
+    } else {
+        toggleText.innerHTML = `LIGHT`;
+    }
+
+}
 
 window.matchMedia('(prefers-color-scheme: dark)')
     .addEventListener('change', event => {
